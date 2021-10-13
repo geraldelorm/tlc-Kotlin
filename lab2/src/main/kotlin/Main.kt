@@ -42,10 +42,11 @@ fun main() {
             //Q3 & 5
             "deposit" -> {
                     if (cmd.size == 2) {
-                        try { deposit(cmd[1].toDouble())
-                    } catch (e: Exception){
-                        println("Input can't to converted to double")
-                    }
+                        try {
+                            deposit(cmd[1].toDouble())
+                        } catch (e: Exception){
+                            println("Input can't to converted to double")
+                        }
                     }else {
                         println("Add a valid amount to deposit")
                     }}
@@ -58,7 +59,6 @@ fun main() {
                         } catch (e: Exception){
                             println("Input can't to converted to double")
                         }
-
                     }else {
                         println("Add a valid amount to withdraw")
                     }}
