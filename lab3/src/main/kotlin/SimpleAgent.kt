@@ -1,4 +1,4 @@
-class SimpleAgent(override val name: String) : Actor{
+class SimpleAgent(override val agentName: String) : Actor{
     override fun act(): Action {
         val action = ForageAction()
         return action
@@ -8,7 +8,7 @@ class SimpleAgent(override val name: String) : Actor{
     }
 
     override fun toString(): String {
-        return "Name: $name"
+        return "Name: $agentName"
     }
 
 }

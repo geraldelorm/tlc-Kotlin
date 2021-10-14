@@ -1,10 +1,10 @@
 import kotlin.random.Random
 
-class RandomAgent(override val name: String, val double: Double) : Actor {
+class RandomAgent(override val agentName: String, val maxDouble: Double) : Actor {
 
 
     override fun act(): Action {
-        val random = Random.nextDouble(0.0, double)
+        val random = Random.nextDouble(0.0, maxDouble)
         if (random < 0.5) {
             val action = NoAction()
             return action
@@ -18,6 +18,6 @@ class RandomAgent(override val name: String, val double: Double) : Actor {
     }
 
     override fun toString(): String {
-        return "Name: $name "
+        return "Name: $agentName "
     }
 }
