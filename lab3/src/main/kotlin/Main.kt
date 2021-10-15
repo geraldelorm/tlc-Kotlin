@@ -3,7 +3,7 @@ fun main() {
     env.step()
     println(env.scores)
 
-    println("--------------------------")
+    println("----------------------------")
 
     val env2 = FoodEnvironment(RandomAgent("Charlie",0.8), RandomAgent("Bob", 0.2), RandomAgent("Alice", 0.6))
     for (i in 1..100)
