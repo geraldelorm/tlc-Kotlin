@@ -5,10 +5,8 @@ fun main(args: Array<String>) {
         0, 1 -> 1
         else -> n * factorial(n -1)
     }
-
-    var fac5 = factorial(5)
+    val fac5 = factorial(5)
     println(fac5)
-
     println("------------")
 
     //Q2
@@ -17,4 +15,10 @@ fun main(args: Array<String>) {
     println(doubleNum(50))
 
     //Q3
+
+
+    //Q4
+
+
+    //Q5
 }
