@@ -1,7 +1,6 @@
 import java.util.Random as jRan
 import kotlin.random.Random as kRan
 
-
 fun main(args: Array<String>) {
     var jScore: Int = 0
     var kScore: Int = 0
